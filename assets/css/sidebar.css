@@ -1,0 +1,187 @@
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+
+
+#sidebar ul li a[aria-expanded="true"] {
+    color: #ffffff;
+  
+}
+
+.side-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 400px;
+  max-width: 400px;
+  background: #d5d7d8;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+  color:black;
+}
+
+#sidebar.active {
+  margin-left: -400px;
+}
+
+#sidebar .sidebar-header {
+  padding: 10px;
+  background: #0d5d9e;
+}
+#sidebar .sidebar-header h3{
+ color: #fff;
+ margin-bottom:0px;
+}
+#sidebar ul.components {
+  padding: 0px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1em;
+  display: block;
+}
+
+
+#sidebar ul li{border-bottom: thin solid #bebebe;}
+
+#sidebar .lectures_lists li a
+
+{
+  
+  font-size: 16px;
+    padding: 5px 0px;
+}
+
+#sidebar .lectures_lists_title {
+    margin-right: 0px;
+  
+}
+
+
+#sidebar ul.lectures_lists li {
+padding: 5px 5px;}
+
+#sidebar ul.lectures_lists li:before {
+    right: 5px;
+    color: #da2a22;
+    /*content: "Free";*/
+    font-weight: 400;
+    padding: 20px 0px 0px 10px;
+}
+
+#sidebar ul li a:hover {
+
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #ffffff;
+ background: #dd413b;
+  
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+#sidebar a[aria-expanded="false"]::before,
+#sidebar a[aria-expanded="true"]::before {
+content: '\e628';
+  display: block;
+  position: absolute;
+  right: 10px;
+  font-family: 'themify';
+  font-size: 0.6em;
+  top: 18px;
+}
+
+#sidebar a[aria-expanded="true"]::before {
+   content: '\e62a';
+   font-family: 'themify';
+}
+
+ul ul a {
+
+}
+
+ul.CTAs {
+  padding: 10px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+  background: #d9271d !important;
+  color: #fff !important;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+ width:100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+
+.btn-sidemenu{background: #dd413b;
+    border: 1px solid #dd413b !important;
+    padding: 14.5px 10px !important;}
+.btn-sidemenu i{vertical-align: middle;}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -400px;
+  }
+  #sidebar.active {
+      min-width: 355px;
+    max-width: 355px;
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
